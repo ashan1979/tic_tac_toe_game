@@ -5,8 +5,8 @@
 }
 
 :root {
-    --CELL-SIZE: 100px;
-    --MARK-SIZE: calc(var(--CELL-SIZE) * 0.9);
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * 0.9);
 }
 
 body {
@@ -25,8 +25,8 @@ body {
 }
 
 .cell {
-    width: var(--CELL-SIZE);
-    height: var(--CELL-SIZE);
+    width: var(--cell-size);
+    height: var(--cell-size);
     border: 1px solid #000;
     display: flex;
     justify-content: center;
@@ -81,8 +81,8 @@ body {
 .board.x .cell:not(.x):not(.circle):hover::after {
     content: '';
     position: absolute;
-    width: calc(var(--MARK-SIZE) * 0.15);
-    height: var(--MARK-SIZE);
+    width: calc(var(--mark-size) * 0.15);
+    height: var(--mark-size);
     /* background-color: #000; */
 }
 
@@ -107,14 +107,14 @@ body {
 
 .cell.circle::before,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    width: var(--MARK-SIZE);
-    height: var(--MARK-SIZE);
+    width: var(--mark-size);
+    height: var(--mark-size);
 }
 
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after {
-    width: calc(var(--MARK-SIZE) * 0.7);
-    height: calc(var(--MARK-SIZE) * 0.7);
+    width: calc(var(--mark-size) * 0.7);
+    height: calc(var(--mark-size) * 0.7);
     background-color: #fff;
 }
 
